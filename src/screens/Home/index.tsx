@@ -35,8 +35,8 @@ const Home: React.FC = () => {
        {
          text: 'Sim',
          onPress: () => {
-           setTasks((current) =>
-             current.filter((t) => {
+           setTasks(prevState =>
+             prevState.filter((t) => {
                return t.id !== id;
              })
            );
